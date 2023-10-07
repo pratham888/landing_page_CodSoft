@@ -1,0 +1,244 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 5vw;
+    background: black;
+    z-index: 9;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(67, 71, 162);
+    transition: 0.4s linear;
+
+}
+
+.menu a:hover:before{
+    width: 90%;
+}
+
+.custom-button {
+    background-color: rgb(7, 17, 90); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+
+.custom-button:hover {
+    background-color: rgb(74, 134, 223); 
+}
+
+.header{
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hotel.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.htext{
+    max-width: 650px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+
+}
+
+.htext span{
+    letter-spacing: 5px;
+}
+
+.htext h1{
+    font-size: 3.5em;
+}
+
+.about-section {
+    display: flex;
+    background-color:#fff ;
+    color: black;
+    padding: 50px 5vw;
+    text-align: center;
+    /* font-family: "Roboto Slab", sans-serif; */
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.landing-img{
+    height: 300px;
+    width: 500px;
+    box-shadow: 0 0 0 2.3px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.landing-img:hover{
+    transform: scale(1.04);
+}
+
+.ab-section-text{
+    text-align: left;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #020202;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #ababab;
+}
+
+#rooms{
+    padding: 50px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#f1eeee);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+
+.layer p,
+.layer h3{
+    color: rgb(10, 8, 8);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform:scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background: rgb(13, 13, 143);
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: rgb(119, 119, 218);
+  
+}
